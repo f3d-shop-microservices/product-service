@@ -13,7 +13,7 @@ final class ProductController extends AbstractController
     #[Route('/products/all', name: 'api_products', methods: ['GET'])]
     public function getAllProducts(ProductRepository $productRepository): Response {
         $items = [];
-        $products = $productRepository->findAll();
+        $products = $productRepository->findBy([], ['title' => 'ASC']);
         foreach ($products as $product) {
             $items[] = [
                 'id' => $product->getId(),
