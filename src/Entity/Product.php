@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\ProductRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Uid\Uuid;
 
 #[ORM\Entity(repositoryClass: ProductRepository::class)]
 class Product
@@ -28,12 +29,10 @@ class Product
     #[ORM\Column]
     private ?\DateTimeImmutable $created = null;
 
-    public function setId(string $id): static
-    {
-        $this->id = $id;
-
-        return $this;
+    public function __construct() {
+        $this->id = (string) Uuid::v4();
     }
+
     public function getId(): ?string
     {
         return $this->id;

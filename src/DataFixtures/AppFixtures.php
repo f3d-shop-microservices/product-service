@@ -12,7 +12,6 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
          $product1 = new Product();
-         $product1->setId('test-product-00001');
          $product1->setTitle('Test product 00001');
          $product1->setDescription('Test-Product-00001, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
          $product1->setPrice(10.0);
@@ -21,7 +20,6 @@ class AppFixtures extends Fixture
          $manager->persist($product1);
 
         $product2 = new Product();
-        $product2->setId('test-product-00002');
         $product2->setTitle('Test product 00002');
         $product2->setDescription('Test-Product-00002, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product2->setPrice(10.0);
@@ -30,7 +28,6 @@ class AppFixtures extends Fixture
         $manager->persist($product2);
 
         $product3 = new Product();
-        $product3->setId('test-product-00003');
         $product3->setTitle('Test product 00003');
         $product3->setDescription('Test-Product-00003, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product3->setPrice(10.0);
@@ -39,7 +36,6 @@ class AppFixtures extends Fixture
         $manager->persist($product3);
 
         $product4 = new Product();
-        $product4->setId('test-product-00004');
         $product4->setTitle('Test product 00004');
         $product4->setDescription('Test-Product-00004, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product4->setPrice(10.0);
@@ -48,7 +44,6 @@ class AppFixtures extends Fixture
         $manager->persist($product4);
 
         $product5 = new Product();
-        $product5->setId('test-product-00005');
         $product5->setTitle('Test product 00005');
         $product5->setDescription('Test-Product-00005, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product5->setPrice(10.0);
@@ -57,7 +52,6 @@ class AppFixtures extends Fixture
         $manager->persist($product5);
 
         $product6 = new Product();
-        $product6->setId('test-product-00006');
         $product6->setTitle('Test product 00006');
         $product6->setDescription('Test-Product-00006, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product6->setPrice(10.0);
@@ -66,7 +60,6 @@ class AppFixtures extends Fixture
         $manager->persist($product6);
 
         $product7 = new Product();
-        $product7->setId('test-product-00007');
         $product7->setTitle('Test product 00007');
         $product7->setDescription('Test-Product-00007, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product7->setPrice(10.0);
@@ -75,7 +68,6 @@ class AppFixtures extends Fixture
         $manager->persist($product7);
 
         $product8 = new Product();
-        $product8->setId('test-product-00008');
         $product8->setTitle('Test product 00008');
         $product8->setDescription('Test-Product-00008, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product8->setPrice(10.0);
@@ -84,7 +76,6 @@ class AppFixtures extends Fixture
         $manager->persist($product8);
 
         $product9 = new Product();
-        $product9->setId('test-product-00009');
         $product9->setTitle('Test product 00009');
         $product9->setDescription('Test-Product-00009, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product9->setPrice(10.0);
@@ -93,7 +84,6 @@ class AppFixtures extends Fixture
         $manager->persist($product9);
 
         $product10 = new Product();
-        $product10->setId('test-product-00010');
         $product10->setTitle('Test product 00010');
         $product10->setDescription('Test-Product-00010, internationally acclaimed textbook provides a comprehensive introduction to the modern study of computer algorithms. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and presents an algorithm, a design technique, an application area, or a related topic. The algorithms are described and designed in a manner to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.');
         $product10->setPrice(10.0);
