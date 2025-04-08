@@ -11,9 +11,25 @@ services:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
+    Symfony\Contracts\HttpClient\HttpClientInterface: '@http_client'
+
+    Shop\Common\Service\ConsulServiceDiscovery:
+        arguments:
+            $serviceHost: '%env(CONSUL_HEALTH_HOST)%'
+            $serviceName: '%env(SERVICE_ID)%'
+            $servicePort: '%env(int:APP_PORT)%'
+            $consulHost: '%env(CONSUL_HOST)%'
+        autowire: true
+        autoconfigure: true
+        public: false
+    Shop\Common\Contract\ServiceDiscoveryInterface: '@Shop\Common\Service\ConsulServiceDiscovery'
+
     Shop\Common\Health\HealthStatusProvider:
         autowire: true
         autoconfigure: true
+
+    App\Command\ServiceDiscoveryRegisterCommand:
+            tags: [ 'console.command' ]
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name

@@ -2,11 +2,11 @@
 
 namespace App\Controller;
 
+use Shop\Common\Debug\HelloCommon;
 use Shop\Common\Health\HealthStatusProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 final class HealthController extends AbstractController
@@ -20,6 +20,7 @@ final class HealthController extends AbstractController
     #[Route('/health', name: 'health_check')]
     public function index(): JsonResponse
     {
+
         $request = $this->requestStack->getCurrentRequest();
         $host = $request ? $request->getHost() : 'unknown';
 
