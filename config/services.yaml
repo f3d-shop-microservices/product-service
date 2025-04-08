@@ -15,7 +15,7 @@ services:
 
     Shop\Common\Service\ConsulServiceDiscovery:
         arguments:
-            $serviceHost: '%env(CONSUL_HEALTH_HOST)%'
+            $serviceHost: '%env(SERVICE_HOST)%'
             $serviceName: '%env(SERVICE_ID)%'
             $servicePort: '%env(int:APP_PORT)%'
             $consulHost: '%env(CONSUL_HOST)%'
