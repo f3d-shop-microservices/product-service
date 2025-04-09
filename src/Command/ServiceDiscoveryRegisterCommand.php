@@ -24,7 +24,7 @@ class ServiceDiscoveryRegisterCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
         $this->serviceDiscovery->register();
-        $io->success('Consul registered');
+        $io->success('Registered in service discovery');
 
         return Command::SUCCESS;
     }
