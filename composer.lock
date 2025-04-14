@@ -1230,12 +1230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/f3d-shop-microservices/shop-common.git",
-                "reference": "c0b1f29b7e88e01e01b7efa5ccbbf74b7eaa56d1"
+                "reference": "7e377ac2bcd6b366fa72538c6a865bafcea65e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/f3d-shop-microservices/shop-common/zipball/c0b1f29b7e88e01e01b7efa5ccbbf74b7eaa56d1",
-                "reference": "c0b1f29b7e88e01e01b7efa5ccbbf74b7eaa56d1",
+                "url": "https://api.github.com/repos/f3d-shop-microservices/shop-common/zipball/7e377ac2bcd6b366fa72538c6a865bafcea65e8c",
+                "reference": "7e377ac2bcd6b366fa72538c6a865bafcea65e8c",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1259,7 @@
                 "source": "https://github.com/f3d-shop-microservices/shop-common/tree/main",
                 "issues": "https://github.com/f3d-shop-microservices/shop-common/issues"
             },
-            "time": "2025-04-10T22:36:22+00:00"
+            "time": "2025-04-11T15:10:25+00:00"
         },
         {
             "name": "psr/cache",
