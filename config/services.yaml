@@ -32,7 +32,7 @@ services:
         public: false
 
 
-    App\Command\ServiceDiscoveryRegisterCommand:
+    Shop\Common\Command\ServiceDiscoveryRegisterCommand:
         tags: [ 'console.command' ]
 
 
